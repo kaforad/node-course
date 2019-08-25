@@ -55,10 +55,10 @@ const removeNote = function(title){
 // save content when a requested title exist
     if(removeDuplicates.length < contentLength){
         saveNotes(removeDuplicates);
-        console.log(`Title:${title} removed!`);
+        console.log(chalk.bgGreen(`Title:${title} removed!`));
     }
     else{
-        console.log('Nothing Removed!');
+        console.log(chalk.bgRed('Nothing Removed!'));
     }
 }
 
