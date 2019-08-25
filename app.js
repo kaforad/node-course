@@ -1,5 +1,6 @@
 const yargs = require('yargs');
 const notes = require('./notes.js');
+//remove command
 yargs.command({
     command :'remove',
     describe:'Remove object by Title',
